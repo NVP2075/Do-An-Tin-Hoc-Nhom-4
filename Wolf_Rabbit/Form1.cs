@@ -28,19 +28,12 @@ namespace Wolf_Rabbit
             InitializeChart();
             
         }
-<<<<<<< HEAD
         //Vẽ biểu đồ
-=======
->>>>>>> 8eaac5de00c2a2322b06996ca49a79fa8e71029c
         private void InitializeChart()
         {
             chartSoLuong.Series.Clear();
             chartSoLuong.ChartAreas.Clear();
-<<<<<<< HEAD
             //Cấu hình trục x và y cho biễu đồ
-=======
-
->>>>>>> 8eaac5de00c2a2322b06996ca49a79fa8e71029c
             ChartArea chartArea = new ChartArea();
             chartArea.AxisX.Title = "Thời gian(ngày)";
             chartArea.AxisX.TitleFont = new Font("Arial", 10, FontStyle.Bold);
@@ -53,21 +46,13 @@ namespace Wolf_Rabbit
             chartArea.AxisY.TitleFont = new Font("Arial",10,FontStyle.Bold);
             chartArea.AxisY.MajorGrid.Enabled = false;
             chartSoLuong.ChartAreas.Add(chartArea);
-<<<<<<< HEAD
             //Tạo và cấu hình chart dạng line cho thỏ
-=======
-
->>>>>>> 8eaac5de00c2a2322b06996ca49a79fa8e71029c
             Series rabbit = new Series("Rabbit");
             rabbit.ChartType = SeriesChartType.Line;
             rabbit.Color = Color.LightBlue;
             rabbit.BorderWidth = 2;
             chartSoLuong.Series.Add(rabbit);
-<<<<<<< HEAD
             //Và sói
-=======
-
->>>>>>> 8eaac5de00c2a2322b06996ca49a79fa8e71029c
             Series wolf = new Series("Wolf");
             wolf.ChartType = SeriesChartType.Line;
             wolf.Color = Color.Gray;
@@ -82,10 +67,6 @@ namespace Wolf_Rabbit
             {
                 World.Invalidate();
             }
-<<<<<<< HEAD
-
-=======
->>>>>>> 8eaac5de00c2a2322b06996ca49a79fa8e71029c
             int rabbitCount = 0;
             int wolfCount = 0;
             foreach(Animal a in ecosystem.Animal )
