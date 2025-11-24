@@ -19,7 +19,7 @@ namespace Wolf_Rabbit
             this.ChangeToReproduce = (float)0.25;
             this.AgeToReproduce = 5;
             this.VisionRange = 500;
-            this.MoveSpeed = 52;
+            this.MoveSpeed = 50;
         }
         //Phương thức di chuyển và săn mồi của sói
         public override void Move(List<Animal>[,] grid, int worldWidth,int worldHeight)
